@@ -18,7 +18,7 @@ build.pipe(process.stdout);
 
 ```
 
-With this plugin, you don't need to use `build.plugins.js()` (it barely does anything anyways).
+With this plugin, you don't need to use `build.plugins.js()` (it barely does anything anyways) unless you're using other middleware for your `scripts` or something.
 
 ## License
 
