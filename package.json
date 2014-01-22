@@ -1,7 +1,7 @@
 {
   "name": "builder-regenerator",
   "description": "Facebook's regenerator plugin for component-builder2",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Jonathan Ong",
     "email": "me@jongleberry.com",
