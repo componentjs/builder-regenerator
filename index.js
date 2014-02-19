@@ -1,6 +1,6 @@
 var fs = require('fs');
+var crypto = require('crypto');
 var regenerator = require('regenerator');
-var calculate = require('sse4_crc32').calculate;
 
 var re = /\bfunction\s*\*/;
 
@@ -38,3 +38,9 @@ function builder_regenerator(options) {
 
 // include the runtime somewhere in your build!
 builder_regenerator.runtime = fs.readFileSync(regenerator.runtime.dev, 'utf8');
+
+function calculate(string) {
+  return crypto.createHash('md5')
+    .update(string)
+    .digest('hex');
+}
